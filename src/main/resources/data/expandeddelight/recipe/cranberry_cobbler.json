@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:wheat",
+    "O": "farmersdelight:pie_crust",
+    "a": "expandeddelight:cranberries",
+    "e": "#c:eggs",
+    "x": "minecraft:sugar"
+  },
+  "pattern": [
+    "#e#",
+    "aaa",
+    "xOx"
+  ],
+  "result": {
+    "count": 1,
+    "id": "expandeddelight:cranberry_cobbler"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    "expandeddelight:cinnamon_wood"
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 6,
+        "id": "expandeddelight:cinnamon_stick"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "expandeddelight:stripped_cinnamon_wood"
+      }
+    }
+  ],
+  "tool": "#minecraft:axes"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.2,
+  "ingredients": [
+    "#c:eggs",
+    "#c:eggs",
+    "#c:crops/asparagus",
+    "#c:foods/cheese",
+    "#c:dusts/salt"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "expandeddelight:asparagus_frittata"
+  }
+}

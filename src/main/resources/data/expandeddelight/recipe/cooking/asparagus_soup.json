@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.8,
+  "ingredients": [
+    "minecraft:water_bucket",
+    "#c:crops/asparagus",
+    "#c:foods/leafy_green"
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "expandeddelight:asparagus_soup"
+  }
+}

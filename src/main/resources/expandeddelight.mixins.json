@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "ianm1647.expandeddelight.common.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "RemoveMilkGoatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": []
+}

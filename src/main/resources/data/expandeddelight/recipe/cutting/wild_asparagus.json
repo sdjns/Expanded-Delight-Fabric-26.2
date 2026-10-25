@@ -1,0 +1,29 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    "expandeddelight:wild_asparagus"
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "expandeddelight:asparagus"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "expandeddelight:asparagus_seeds"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 2,
+        "id": "minecraft:brown_dye"
+      }
+    }
+  ],
+  "tool": "#c:tools/knife"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.5,
+  "ingredients": [
+    "minecraft:water_bucket",
+    "minecraft:apple",
+    "expandeddelight:cinnamon",
+    "minecraft:sugar"
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "expandeddelight:cinnamon_apples"
+  }
+}

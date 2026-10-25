@@ -1,0 +1,17 @@
+{
+  "type": "expandeddelight:juicing",
+  "container": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "experience": 1,
+  "ingredients": [
+    "minecraft:melon_slice",
+    "minecraft:sugar"
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:melon_juice"
+  }
+}

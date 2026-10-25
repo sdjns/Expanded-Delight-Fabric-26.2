@@ -1,0 +1,15 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    "expandeddelight:cranberry_cobbler"
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "expandeddelight:cranberry_cobbler_slice"
+      }
+    }
+  ],
+  "tool": "#c:tools/knife"
+}
