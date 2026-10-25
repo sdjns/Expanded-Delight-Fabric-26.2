@@ -8,28 +8,19 @@
 4. 把客户端源码拆到 `src/client`，删掉不再需要的 Fabric-ASM 早期加载器。
 5. 批量迁移：`ResourceLocation` → `Identifier`、`level.random` → `getRandom()`、`isClientSide` → `isClientSide()`。
 
-## 当前状态：✅ 构建通过 + 服务端跑通（第 7 轮结束）
+## 当前状态：✅ 已发布（第 8 轮结束）
 
-- `gradle build` 成功，产出 `build/libs/expandeddelight-1.0.0+26.2.jar`
-- **装 Farmer's Delight Refabricated 26.2**：服务端 **Done**，45 个模组、2001 个配方、**0 ERROR**
-- **不装 FD**：Fabric 给出清晰的依赖错误「需要 farmersdelight，但没有安装它」（附加模组的正确行为）
+- 构建：`gradle build` 通过
+- 服务端：装 FD 26.2 时 45 模组 / 2001 配方 / 0 ERROR；不装时给出清晰依赖提示
+- 仓库：https://github.com/sdjns/Expanded-Delight-Fabric-26.2
+- 发布：https://github.com/sdjns/Expanded-Delight-Fabric-26.2/releases/tag/v1.0.0%2B26.2
+- 仓库包含 1048 个文件（第三方 FD jar 已从仓库移除，构建前需自备到 `libs/`）
 
-第 7 轮完成：
-- 生成 99 个 26.2 的 `items/*.json`（物品模型定义）
-- 103 个配方转成 26.2 材料格式（字符串 / `#tag`）
-- 4 个野生作物战利品表去掉 NeoForge 条件，改用原版 `match_tool`（剪刀）
-- 删除 `neoforge/` 数据、`loot_modifiers`、以及 create/farmersrespite/sereneseasons/supplementaries/toughasnails 的兼容数据
-- 用 Fabric `BiomeModifications` 替代 NeoForge 的 biome_modifier JSON（7 处）
-- worldgen JSON 适配 26.2：树配置（`below_trunk_provider`、原版金合欢树叶生成器）、5 个 patch 改成 `simple_block` + `would_survive`
-- 方块/物品注册补 `setId(ResourceKey)`（26.2 必需），注册顺序修正（实体类型要先于物品）
-- 榨汁机配方改用 `ItemStackTemplate`（26.2 配方不能用 `ItemStack.CODEC`，否则报 "components not bound"）
-- 村民交易改为数据驱动 JSON（农夫 1/2 级）
-
-待办（第 8 轮）：
-1. 发布到 GitHub（建仓库、推送、Release）
-2. 补榨汁机 GUI 的自定义背景/进度条（当前是标准容器界面）
-3. 船暂时借橡木贴图渲染
-4. README / CHANGELOG / 移植说明
+剩余（外观，不影响功能）：
+1. 榨汁机界面自定义背景 + 进度条
+2. 船的自定义贴图
+3. 流浪商人交易（需要补 trade tags，暂未启用）
+4. 客户端画面未实机验证
 
 ## 原始评估（第 0 轮）：524 个错误
 
