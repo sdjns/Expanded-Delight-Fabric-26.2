@@ -31,6 +31,7 @@
 
 工程使用 Loom 1.18.4 / Gradle 9.7.1，Minecraft 26.2 无需 mappings。
 FD 的 jar 放在 `libs/` 仅用于编译（运行时由 mods 文件夹提供）。
+`libs/` 不入库，构建前请从 Modrinth 下载 `FarmersDelight-26.2-3.6.29+refabricated.jar` 放进 `libs/`。
 
 ## 与原版的差异
 
